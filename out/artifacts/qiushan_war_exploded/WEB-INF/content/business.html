@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>创建门店</title>
+    <link href="./css/business.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+</head>
+<body class="zh-CN">
+<div class="header">
+    <div class="wrap-lg">
+        <div class="top-info">
+            <a href="#" class="i-user">用户名</a>
+            <a href="#" class="i-lGuide">房东指引</a>
+        </div>
+    </div>
+</div>
+
+<div style="clear: left"></div>
+<div id="wrapper" class="body wrap-lg">
+    <div class="" id="mainContent">
+        <div class="wrapper">
+            <form id="mainForm" class="body wrap-lg" method="post" action="http://wwww.baidu.com" novalidate="novalidate">
+                <div class="detailWrapper">
+                    <div class="titleBar">取一个有趣的名字</div>
+                    <div class="rowsWrapper">
+                        <div class="rowItem">
+                            <div class="promptWrapper">
+                                <input id="tavernName" name="tavernName" class="input-w400" type="text" placeholder="like:总统VIP套房" aria-required="true"><label id="tavernName-error" class="textWarning" for="tavernName" style="display: none">名称不能为空</label>
+                            </div>
+                            <p class="textWarning"></p>
+                        </div>
+                    </div>
+
+                    <!--分割线-->
+                    <div class="solidLine"></div>
+                    <div class="titleBar">设置您的基本信息 </div>
+                    <p class="textMuted">我们非常重视隐私。您提供的基本信息会受到我们的严格保密。</p>
+                    <div class="rowsWrapper" display="block">
+                        <div class="rowItem">
+                            <span class="labelName">床铺数量</span>
+                            <input id="bedcount" name="bedcount" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="bedcount-error" class="textWarning" for="bedcount" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">卧室</span>
+                            无<input id="bedroom_0" name="bedroom" type="radio" value="0"> 有<input id="bedroom_1" name="bedroom" type="radio" value="1">
+                            <label id="bedroom-error" class="textWarning" for="bedroom" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">早餐</span>
+                            无<input id="breakfast_0" name="breakfast" type="radio" value="0"> 有<input id="breakfast_1" name="breakfast" type="radio" value="1">
+                            <label id="breakfast-error" class="textWarning" for="breakfast" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">厨房</span>
+                            无<input id="cookroom_0" name="cookroom" type="radio" value="0"> 有<input id="cookroom_1" name="cookroom" type="radio" value="1">
+                            <label id="cookroom-error" class="textWarning" for="cookroom" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">房源类型</span>
+                            <input id="housetype" name="housetype" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="housetype-error" class="textWarning" for="housetype" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">可住</span>
+                            <input id="ishouse" name="ishouse" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="ishouse-error" class="textWarning" for="ishouse" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">是否圈养宠物</span>
+                            无<input id="ispet_0" name="ispet" type="radio" value="0"> 有<input id="ispet_1" name="ispet" type="radio" value="1">
+                            <label id="ispet-error" class="textWarning" for="ispet" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">位置</span>
+                            <input id="location" name="location" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="location-error" class="textWarning" for="location" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">备注</span>
+                            <input id="other" name="other" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="other-error" class="textWarning" for="other" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                        <span class="labelName">价格</span>
+                        <input id="price" name="price" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                        <label id="price-error" class="textWarning" for="price" style="display: none;"></label>
+                        <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_1" id="tp_1">
+                            <label id="tp_1-error" class="textWarning" for="tp_1" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_2" id="tp_2">
+                            <label id="tp_2-error" class="textWarning" for="tp_2" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_3" id="tp_3">
+                            <label id="tp_3-error" class="textWarning" for="tp_3" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_4" id="tp_4">
+                            <label id="tp_4-error" class="textWarning" for="tp_4" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_5" id="tp_5">
+                            <label id="tp_5-error" class="textWarning" for="tp_5" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">上传图片</span>
+                            <input type="file" name="tp_6" id="tp_6">
+                            <label id="tp_6-error" class="textWarning" for="tp_6" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+
+                        <div class="rowItem">
+                            <span class="labelName">种类</span>
+                            <input id="type" name="type" class="input-w200" type="text" aria-required="true" aria-invalid="false">
+                            <label id="type-error" class="textWarning" for="type" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">无线网络</span>
+                            无<input id="wifi_0" name="wifi" type="radio" value="0"> 有<input id="wifi_1" name="wifi" type="radio" value="1">
+                            <label id="wifi-error" class="textWarning" for="wifi" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+                        <div class="rowItem">
+                            <span class="labelName">无线网络</span>
+                            无<input id="wifi_0" name="wifi" type="radio" value="0"> 有<input id="wifi_1" name="wifi" type="radio" value="1">
+                            <label id="wifi-error" class="textWarning" for="wifi" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">书桌工作区</span>
+                            无<input id="workspace_0" name="workspace" type="radio" value="0"> 有<input id="workspace_1" name="workspace" type="radio" value="1">
+                            <label id="workspace-error" class="textWarning" for="workspace" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+                        <div class="rowItem">
+                            <span class="labelName">卫生间</span>
+                            无<input id="wrashroom_0" name="wrashroom" type="radio" value="0"> 有<input id="wrashroom_1" name="wrashroom" type="radio" value="1">
+                            <label id="wrashroom-error" class="textWarning" for="wrashroom" style="display: none;"></label>
+                            <p class="textWarning"></p>
+                        </div>
+
+
+
+
+
+
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">类型</span>-->
+                            <!--<input id="type" name="type" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="type-error" class="textWarning" for="type" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">退房时间</span>-->
+                            <!--<input id="exittime" name="exittime" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="exittime-error" class="textWarning" for="exittime" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">入住时间</span>-->
+                            <!--<input id="entertime" name="entertime" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="entertime-error" class="textWarning" for="entertime" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">预定数量</span>-->
+                            <!--<input id="ordercount" name="ordercount" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="ordercount-error" class="textWarning" for="ordercount" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">订单类型</span>-->
+                            <!--<input id="ordertype" name="ordertype" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="ordertype-error" class="textWarning" for="ordertype" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">入住人数</span>-->
+                            <!--<input id="entercount" name="entercount" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="entercount-error" class="textWarning" for="entercount" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+
+
+                    </div>
+                    <!--<div class="solidLine"></div>-->
+                    <!--<div class="titleBar">设置您的资质信息</div>-->
+                    <!--<p class="textMuted">上传资质信息，建立我们和住户对您的信任。</p>-->
+                    <!--<div class="rowsWrapper" display="block">-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">地址</span>-->
+                            <!--<input id="address" name="address" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="address-error" class="textWarning" for="address" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">年龄</span>-->
+                            <!--<input id="age" name="age" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="age-error" class="textWarning" for="age" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">邮箱</span>-->
+                            <!--<input id="email" name="email" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="email-error" class="textWarning" for="email" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">身份证号</span>-->
+                            <!--<input id="idcard" name="idcard" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="idcard-error" class="textWarning" for="idcard" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">等级</span>-->
+                            <!--<input id="level" name="level" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="level-error" class="textWarning" for="level" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">真实姓名</span>-->
+                            <!--<input id="name" name="name" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="name-error" class="textWarning" for="name" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">联系人电话</span>-->
+                            <!--<input id="phone" name="phone" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="phone-error" class="textWarning" for="phone" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">性别</span>-->
+                            <!--男<input id="sex_0" name="sex" type="radio" value="0"> 女<input id="sex_1" name="sex" type="radio" value="1">-->
+                            <!--<label id="sex-error" class="textWarning" for="sex" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+                        <!--<div class="rowItem">-->
+                            <!--<span class="labelName">ID</span>-->
+                            <!--<input id="uid" name="uid" maxlength="20" class="input-w200" type="text" aria-required="true" aria-invalid="false">-->
+                            <!--<label id="uid-error" class="textWarning" for="uid" style="display: none;"></label>-->
+                            <!--<p class="textWarning"></p>-->
+                        <!--</div>-->
+
+
+                    </div>
+
+                    <div class="terms" id="agreement">
+                        <label style="cursor:pointer;"><input id="agreement-check" name="agreement-check" type="checkbox" class="valid" aria-invalid="false">我已阅读并同意遵守协议内容</label>
+                        <span id="china-agreement">
+                    	<a href="#" class="text-standOut" target="_blank"> 《QS商户服务协议》 &nbsp;</a>
+                    	<a href="#" class="text-standOut ml10" target="_blank">  《QS商家入驻标准》 &nbsp;</a>
+                    	<a href="#" class="text-standOut ml10" target="_blank"> 《QS预订服务条款》 &nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="detailSubmit">
+                    <input type="submit" id="submit" style="display:none">
+                    <a id="applySubmit" class="btn-primary-m" style="display:block">同意条款并提交</a>
+                    <a id="disApplySubmit" class="btn-disable-m" style="display:block">同意条款并提交</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $("#applySubmit").click(function(){
+        //$("#submit").click();
+        alert("提交");
+        $("#mainForm").submit();
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+.bottom .bottom_img  ul{
+	list-style: none;
+	text-align: center;
+}
+.bottom .bottom_img  ul li{
+	float: left;
+	height: 250px;
+	width: 350px;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.index_bottom{
+	clear:left;
+	clear: both;
+}
+.center{
+	text-align: center;
+	margin: 40px;
+}

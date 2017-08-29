@@ -1,0 +1,242 @@
+
+body {
+    font: normal 12px/1.5 "Microsoft Yahei","寰蒋闆呴粦",Tahoma,Arial,STHeiti,sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+input {
+    font-family: "Microsoft Yahei", "寰蒋闆呴粦";
+    webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+}
+
+input, input:focus, button, button:focus, select, textarea, textarea:focus, select:focus {
+    outline: none;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+textarea {
+    resize: none;
+    font-family: "Microsoft Yahei", "寰蒋闆呴粦";
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #00aeff;
+    margin-bottom: 20px;
+}
+
+.header .wrap-lg {
+    background-color: #00aeff;
+    height: 60px;
+    overflow: hidden;
+}
+
+.wrap-lg, .wrap-large, .wrapper-large {
+    width: 1190px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+.top-info {
+    float: right;
+    padding-top: 25px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.top-info .i-lGuide,.top-info .i-user {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 18px;
+    margin-left: 20px;
+}
+
+.top-info .i-lGuide {
+    background-position: 0 -42px;
+}
+
+.top-info .i-user {
+    background-position: 0 -136px;
+}
+
+.detailWrapper, .detailWraper {
+    margin-top: -1px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    zoom: 1;
+    background-color: #fff;
+}
+
+.detailWrapper:after, .detailWraper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.detailWrapper, .detailWraper {
+    margin-top: -1px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    zoom: 1;
+    background-color: #fff;
+}
+
+.detailWrapper:after, .detailWraper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.titleBar {
+    display: block;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.promptWrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.textWarning, .textWarning a {
+    color: #f30;
+}
+
+
+.solidLine, .dashedLine {
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.textMuted, .textMuted a {
+    color: #999;
+}
+
+.detailWrapper .rowItem, .detailWraper .rowItem, .detailWrapper .rowItem-txt, .detailWraper .rowItem-txt, .detailWrapper .rowItem-s, .detailWraper .rowItem-s, .popBox-body .formContent .rowItem, .popBox-body .form-content .rowItem, .pop-bd .formContent .rowItem, .pop-bd .form-content .rowItem, .popBox-body .formContent .rowItem-txt, .popBox-body .form-content .rowItem-txt, .pop-bd .formContent .rowItem-txt, .pop-bd .form-content .rowItem-txt, .popBox-body .formContent .rowItem-s, .popBox-body .form-content .rowItem-s, .pop-bd .formContent .rowItem-s, .pop-bd .form-content .rowItem-s, .popBox-body .formContent .rowItem-l, .popBox-body .form-content .rowItem-l, .pop-bd .formContent .rowItem-l, .pop-bd .form-content .rowItem-l {
+    font-size: 12px;
+    line-height: 28px;
+    min-height: 28px;
+    margin-bottom: 10px;
+}
+
+.detailWrapper .rowItem .labelName, .detailWraper .rowItem .labelName, .detailWrapper .rowItem-txt .labelName, .detailWraper .rowItem-txt .labelName, .detailWrapper .rowItem-s .labelName, .detailWraper .rowItem-s .labelName, .popBox-body .formContent .rowItem .labelName, .popBox-body .form-content .rowItem .labelName, .pop-bd .formContent .rowItem .labelName, .pop-bd .form-content .rowItem .labelName, .popBox-body .formContent .rowItem-txt .labelName, .popBox-body .form-content .rowItem-txt .labelName, .pop-bd .formContent .rowItem-txt .labelName, .pop-bd .form-content .rowItem-txt .labelName, .popBox-body .formContent .rowItem-s .labelName, .popBox-body .form-content .rowItem-s .labelName, .pop-bd .formContent .rowItem-s .labelName, .pop-bd .form-content .rowItem-s .labelName, .popBox-body .formContent .rowItem-l .labelName, .popBox-body .form-content .rowItem-l .labelName, .pop-bd .formContent .rowItem-l .labelName, .pop-bd .form-content .rowItem-l .labelName {
+    display: block;
+    font-size: 22px;
+    padding: 2px 0;
+}
+
+.detailWrapper .rowItem .label-name, .detailWraper .rowItem .label-name, .detailWrapper .rowItem-txt .label-name, .detailWraper .rowItem-txt .label-name, .detailWrapper .rowItem-s .label-name, .detailWraper .rowItem-s .label-name, .popBox-body .formContent .rowItem .label-name, .popBox-body .form-content .rowItem .label-name, .pop-bd .formContent .rowItem .label-name, .pop-bd .form-content .rowItem .label-name, .popBox-body .formContent .rowItem-txt .label-name, .popBox-body .form-content .rowItem-txt .label-name, .pop-bd .formContent .rowItem-txt .label-name, .pop-bd .form-content .rowItem-txt .label-name, .popBox-body .formContent .rowItem-s .label-name, .popBox-body .form-content .rowItem-s .label-name, .pop-bd .formContent .rowItem-s .label-name, .pop-bd .form-content .rowItem-s .label-name, .popBox-body .formContent .rowItem-l .label-name, .popBox-body .form-content .rowItem-l .label-name, .pop-bd .formContent .rowItem-l .label-name, .pop-bd .form-content .rowItem-l .label-name {
+    float: left;
+    width: 120px;
+    text-align: right;
+}
+
+.detailWrapper .rowItem .colItem, .detailWraper .rowItem .colItem, .detailWrapper .rowItem-txt .colItem, .detailWraper .rowItem-txt .colItem, .detailWrapper .rowItem-s .colItem, .detailWraper .rowItem-s .colItem, .popBox-body .formContent .rowItem .colItem, .popBox-body .form-content .rowItem .colItem, .pop-bd .formContent .rowItem .colItem, .pop-bd .form-content .rowItem .colItem, .popBox-body .formContent .rowItem-txt .colItem, .popBox-body .form-content .rowItem-txt .colItem, .pop-bd .formContent .rowItem-txt .colItem, .pop-bd .form-content .rowItem-txt .colItem, .popBox-body .formContent .rowItem-s .colItem, .popBox-body .form-content .rowItem-s .colItem, .pop-bd .formContent .rowItem-s .colItem, .pop-bd .form-content .rowItem-s .colItem, .popBox-body .formContent .rowItem-l .colItem, .popBox-body .form-content .rowItem-l .colItem, .pop-bd .formContent .rowItem-l .colItem, .pop-bd .form-content .rowItem-l .colItem {
+    margin-left: 120px;
+}
+
+.detailWrapper .rowItem > .text, .detailWraper .rowItem > .text, .detailWrapper .rowItem-txt > .text, .detailWraper .rowItem-txt > .text, .detailWrapper .rowItem-s > .text, .detailWraper .rowItem-s > .text, .popBox-body .formContent .rowItem > .text, .popBox-body .form-content .rowItem > .text, .pop-bd .formContent .rowItem > .text, .pop-bd .form-content .rowItem > .text, .popBox-body .formContent .rowItem-txt > .text, .popBox-body .form-content .rowItem-txt > .text, .pop-bd .formContent .rowItem-txt > .text, .pop-bd .form-content .rowItem-txt > .text, .popBox-body .formContent .rowItem-s > .text, .popBox-body .form-content .rowItem-s > .text, .pop-bd .formContent .rowItem-s > .text, .pop-bd .form-content .rowItem-s > .text, .popBox-body .formContent .rowItem-l > .text, .popBox-body .form-content .rowItem-l > .text, .pop-bd .formContent .rowItem-l > .text, .pop-bd .form-content .rowItem-l > .text, .detailWrapper .rowItem .textWarning, .detailWraper .rowItem .textWarning, .detailWrapper .rowItem-txt .textWarning, .detailWraper .rowItem-txt .textWarning, .detailWrapper .rowItem-s .textWarning, .detailWraper .rowItem-s .textWarning, .popBox-body .formContent .rowItem .textWarning, .popBox-body .form-content .rowItem .textWarning, .pop-bd .formContent .rowItem .textWarning, .pop-bd .form-content .rowItem .textWarning, .popBox-body .formContent .rowItem-txt .textWarning, .popBox-body .form-content .rowItem-txt .textWarning, .pop-bd .formContent .rowItem-txt .textWarning, .pop-bd .form-content .rowItem-txt .textWarning, .popBox-body .formContent .rowItem-s .textWarning, .popBox-body .form-content .rowItem-s .textWarning, .pop-bd .formContent .rowItem-s .textWarning, .pop-bd .form-content .rowItem-s .textWarning, .popBox-body .formContent .rowItem-l .textWarning, .popBox-body .form-content .rowItem-l .textWarning, .pop-bd .formContent .rowItem-l .textWarning, .pop-bd .form-content .rowItem-l .textWarning, .detailWrapper .rowItem .textWarning a, .textWarning .detailWrapper .rowItem a, .detailWraper .rowItem .textWarning a, .textWarning .detailWraper .rowItem a, .detailWrapper .rowItem-txt .textWarning a, .textWarning .detailWrapper .rowItem-txt a, .detailWraper .rowItem-txt .textWarning a, .textWarning .detailWraper .rowItem-txt a, .detailWrapper .rowItem-s .textWarning a, .textWarning .detailWrapper .rowItem-s a, .detailWraper .rowItem-s .textWarning a, .textWarning .detailWraper .rowItem-s a, .popBox-body .formContent .rowItem .textWarning a, .textWarning .popBox-body .formContent .rowItem a, .popBox-body .form-content .rowItem .textWarning a, .textWarning .popBox-body .form-content .rowItem a, .pop-bd .formContent .rowItem .textWarning a, .textWarning .pop-bd .formContent .rowItem a, .pop-bd .form-content .rowItem .textWarning a, .textWarning .pop-bd .form-content .rowItem a, .popBox-body .formContent .rowItem-txt .textWarning a, .textWarning .popBox-body .formContent .rowItem-txt a, .popBox-body .form-content .rowItem-txt .textWarning a, .textWarning .popBox-body .form-content .rowItem-txt a, .pop-bd .formContent .rowItem-txt .textWarning a, .textWarning .pop-bd .formContent .rowItem-txt a, .pop-bd .form-content .rowItem-txt .textWarning a, .textWarning .pop-bd .form-content .rowItem-txt a, .popBox-body .formContent .rowItem-s .textWarning a, .textWarning .popBox-body .formContent .rowItem-s a, .popBox-body .form-content .rowItem-s .textWarning a, .textWarning .popBox-body .form-content .rowItem-s a, .pop-bd .formContent .rowItem-s .textWarning a, .textWarning .pop-bd .formContent .rowItem-s a, .pop-bd .form-content .rowItem-s .textWarning a, .textWarning .pop-bd .form-content .rowItem-s a, .popBox-body .formContent .rowItem-l .textWarning a, .textWarning .popBox-body .formContent .rowItem-l a, .popBox-body .form-content .rowItem-l .textWarning a, .textWarning .popBox-body .form-content .rowItem-l a, .pop-bd .formContent .rowItem-l .textWarning a, .textWarning .pop-bd .formContent .rowItem-l a, .pop-bd .form-content .rowItem-l .textWarning a, .textWarning .pop-bd .form-content .rowItem-l a, .detailWrapper .rowItem .textMuted, .detailWraper .rowItem .textMuted, .detailWrapper .rowItem-txt .textMuted, .detailWraper .rowItem-txt .textMuted, .detailWrapper .rowItem-s .textMuted, .detailWraper .rowItem-s .textMuted, .popBox-body .formContent .rowItem .textMuted, .popBox-body .form-content .rowItem .textMuted, .pop-bd .formContent .rowItem .textMuted, .pop-bd .form-content .rowItem .textMuted, .popBox-body .formContent .rowItem-txt .textMuted, .popBox-body .form-content .rowItem-txt .textMuted, .pop-bd .formContent .rowItem-txt .textMuted, .pop-bd .form-content .rowItem-txt .textMuted, .popBox-body .formContent .rowItem-s .textMuted, .popBox-body .form-content .rowItem-s .textMuted, .pop-bd .formContent .rowItem-s .textMuted, .pop-bd .form-content .rowItem-s .textMuted, .popBox-body .formContent .rowItem-l .textMuted, .popBox-body .form-content .rowItem-l .textMuted, .pop-bd .formContent .rowItem-l .textMuted, .pop-bd .form-content .rowItem-l .textMuted, .detailWrapper .rowItem .textMuted a, .textMuted .detailWrapper .rowItem a, .detailWraper .rowItem .textMuted a, .textMuted .detailWraper .rowItem a, .detailWrapper .rowItem-txt .textMuted a, .textMuted .detailWrapper .rowItem-txt a, .detailWraper .rowItem-txt .textMuted a, .textMuted .detailWraper .rowItem-txt a, .detailWrapper .rowItem-s .textMuted a, .textMuted .detailWrapper .rowItem-s a, .detailWraper .rowItem-s .textMuted a, .textMuted .detailWraper .rowItem-s a, .popBox-body .formContent .rowItem .textMuted a, .textMuted .popBox-body .formContent .rowItem a, .popBox-body .form-content .rowItem .textMuted a, .textMuted .popBox-body .form-content .rowItem a, .pop-bd .formContent .rowItem .textMuted a, .textMuted .pop-bd .formContent .rowItem a, .pop-bd .form-content .rowItem .textMuted a, .textMuted .pop-bd .form-content .rowItem a, .popBox-body .formContent .rowItem-txt .textMuted a, .textMuted .popBox-body .formContent .rowItem-txt a, .popBox-body .form-content .rowItem-txt .textMuted a, .textMuted .popBox-body .form-content .rowItem-txt a, .pop-bd .formContent .rowItem-txt .textMuted a, .textMuted .pop-bd .formContent .rowItem-txt a, .pop-bd .form-content .rowItem-txt .textMuted a, .textMuted .pop-bd .form-content .rowItem-txt a, .popBox-body .formContent .rowItem-s .textMuted a, .textMuted .popBox-body .formContent .rowItem-s a, .popBox-body .form-content .rowItem-s .textMuted a, .textMuted .popBox-body .form-content .rowItem-s a, .pop-bd .formContent .rowItem-s .textMuted a, .textMuted .pop-bd .formContent .rowItem-s a, .pop-bd .form-content .rowItem-s .textMuted a, .textMuted .pop-bd .form-content .rowItem-s a, .popBox-body .formContent .rowItem-l .textMuted a, .textMuted .popBox-body .formContent .rowItem-l a, .popBox-body .form-content .rowItem-l .textMuted a, .textMuted .popBox-body .form-content .rowItem-l a, .pop-bd .formContent .rowItem-l .textMuted a, .textMuted .pop-bd .formContent .rowItem-l a, .pop-bd .form-content .rowItem-l .textMuted a, .textMuted .pop-bd .form-content .rowItem-l a {
+    margin-bottom: -8px;
+    clear: both;
+}
+
+.input-w200锛�.input-w400{
+    font-size: 12px;
+    color: #333;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 6px;
+    border: solid 1px #dbdfe3;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.input-w200 {
+    width: 200px;
+}
+
+.input-w400 {
+    width: 400px;
+}
+
+.text-standOut, .text-standOut a {
+    color: #6e80e3;
+}
+
+.detailSubmit {
+    padding: 10px 20px 10px 0;
+    text-align: center;
+}
+
+.detailSubmit a, .detailSubmit input {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.detailSubmit .submitInfo {
+    margin-left: 20px;
+    padding: 5px 0;
+    line-height: 22px;
+    color: #999;
+}
+
+.btn-primary-m {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background-color: #6e80e3;
+    border-color: #6e80e3;
+}
+
+.btn-primary-m:hover {
+    text-decoration: none;
+    background-color: #8c9eff;
+    border-color: #8c9eff;
+}
+
+.btn-disable-m {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: default;
+}
+.btn-disable-m:hover {
+    text-decoration: none;
+    background-color: #ccc;
+    border-color: #ccc;
+}

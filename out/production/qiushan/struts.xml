@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 指定Struts2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+	<!-- 配置了系列常量 -->
+	<constant name="struts.custom.i18n.resources" value="resource"/>
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<constant name="struts.devMode" value="false"/>
+	<package name="base" namespace="/" extends="struts-default">
+	<interceptors>
+		<interceptor name="loginInterctpor" class="com.qiushan.inteceptor.ActionInterctpor"/>
+	</interceptors>
+		<action name="forward" class="com.qiushan.action.forwad.Forwad">
+			<result name="login">/WEB-INF/content/login.jsp</result>
+			<result name="regist">/WEB-INF/content/regist.jsp</result>
+			<result name="exit">/WEB-INF/content/exit.jsp</result>
+			<result name="index">/WEB-INF/content/index.jsp</result>
+			<result name="seller">/WEB-INF/content/seller.jsp</result>
+			<result name="customer">/WEB-INF/content/customer.jsp</result>
+			<result name="customerInf">/WEB-INF/content/customerInf.jsp</result>
+			<result name="customerCompleteInf">/WEB-INF/content/customerCompleteInf.jsp</result>
+			<result name="sellerCompleteInf">/WEB-INF/content/sellerCompleteInf.jsp</result>
+			<result name="addhouse">/WEB-INF/content/addhouse.jsp</result>
+			<result name="uploadImage">/WEB-INF/content/uploadImage.jsp</result>
+			<result name="sellerInf">/WEB-INF/content/sellerInf.jsp</result>
+			<result name="showhouse">/WEB-INF/content/showhouse.jsp</result>
+			<result name="house">/WEB-INF/content/house.jsp</result>
+				
+		</action>
+		
+		<action name="loadgoods" class="com.qiushan.action.load.LoadHoseAction">   
+	    	<result name="index">/WEB-INF/content/index.jsp</result>
+	 	</action>
+	 	<action name="housegoods" class="com.qiushan.action.load.HouseGoodsAction">   
+	    	<result name="getHouseSuccess">/WEB-INF/content/housegoods.jsp</result>
+	 	</action>
+		<!-- 验证码 -->
+		<action name="rand" class="com.qiushan.action.code.RandomAction">   
+	    	<result type="stream">   
+	           	<param name="contentType">image/jpeg</param>   
+	           	<param name="inputName">inputStream</param>   
+	      	</result>
+	 	</action>
+	 	
+	 	
+	 	
+	 	
+		<!-- customer 顾客信息 -->
+		<action name="customerLogin" class="com.qiushan.action.customer.LoginAction">
+			<interceptor-ref name="params"/>
+			<result name="loginSuccess" >/WEB-INF/content/index.jsp</result>
+			<result name="loginFail">/WEB-INF/content/login.jsp</result>
+			<result name="codeError">/WEB-INF/content/login.jsp</result>
+		</action>
+		<action name="browseCart" class="com.qiushan.action.customer.BrowseCartAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<result name="browseCartSuccess">/WEB-INF/content/browseCart.jsp</result>
+			<result name="completeInf">/WEB-INF/content/customer.jsp</result>
+			<result name="error">/WEB-INF/content/error.jsp</result>
+		</action>
+		<action name="customerFindName" class="com.qiushan.action.customer.FindNameAction">
+			<result type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputName">result</param>
+			</result>
+		</action>
+		<action name="addCart" class="com.qiushan.action.customer.AddCartAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<result name="addCartSuccess">/WEB-INF/content/housegoods.jsp</result>
+			<result name="null">/WEB-INF/content/login.jsp</result>
+			<result name="error">/WEB-INF/content/error.jsp</result>
+			<result name="completeInf">/WEB-INF/content/customer.jsp</result>
+		</action>
+		<action name="customerRegist" class="com.qiushan.action.customer.RegistAction">
+			<interceptor-ref name="params"/>
+			<result name="registSuccess">/WEB-INF/content/login.jsp</result>
+			<result name="registFail">/WEB-INF/content/regist.jsp</result>
+			<result name="codeError">/WEB-INF/content/regist.jsp</result>
+		</action>
+		<action name="customerCompleteInf" class="com.qiushan.action.customer.CompleteInfAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<!-- 跳到主页 -->
+			<result name="login">/WEB-INF/content/login.jsp</result>
+			<result name="completeInfSuccess">/WEB-INF/content/success.jsp</result>
+			<result name="completeInfFail">/WEB-INF/content/customerCompleteInf.jsp</result>
+			<result name="null">/WEB-INF/content/customerCompleteInf.jsp</result>
+		</action>
+		<action name="removeCart" class="com.qiushan.action.customer.RemoveCartAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<result type="chain" name="removeCartSuccess">browseCart</result>
+			<result name="removeCartFail">/WEB-INF/content/browseCart.jsp</result>
+		</action>
+		
+		
+		<!-- seller 商家信息 -->
+		<action name="sellerLogin" class="com.qiushan.action.seller.LoginAction">
+			<interceptor-ref name="params"/>
+			<result name="loginSuccess">/WEB-INF/content/seller.jsp</result>
+			<result name="input">/WEB-INF/content/seller.jsp</result>
+			<result name="loginFail">/WEB-INF/content/login.jsp</result>
+			<result name="codeError">/WEB-INF/content/login.jsp</result>
+		</action>
+		<action name="sellerRegist" class="com.qiushan.action.seller.RegistAction">
+			<interceptor-ref name="params"/>
+			<result name="registSuccess">/WEB-INF/content/login.jsp</result>
+			<result name="registFail">/WEB-INF/content/regist.jsp</result>
+			<result name="codeError">/WEB-INF/content/regist.jsp</result>
+		</action>
+		<action name="sellerCompleteInf" class="com.qiushan.action.seller.CompleteInfAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<!-- 跳到主页 -->
+			<result name="completeInfSuccess">/WEB-INF/content/success.jsp</result>
+			<result name="null">/WEB-INF/content/fail.jsp</result>
+		</action>
+		<action name="sellerFindName" class="com.qiushan.action.seller.FindNameAction">
+			<result type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputName">result</param>
+			</result>
+		</action>
+		<action name="sellerAddHouse" class="com.qiushan.action.seller.AddHouseAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<!-- 跳到主页 -->
+			<result name="input">/WEB-INF/content/error.jsp</result>
+			<result name="addHouseSuccess">/WEB-INF/content/uploadImage.jsp</result>
+			<result name="addHouseFail">/WEB-INF/content/addhouse1.jsp</result>
+		</action>
+		<action name="sellerUpload" class="com.qiushan.action.seller.UploadImage">
+			<!-- 动态设置Action的属性值 -->
+			<param name="allowTypes">image/png,image/gif,image/jpeg,image/jpg</param>
+			<param name="savePath">/uploadFiles</param>
+			<!-- 配置Struts 2默认的视图页面 -->
+			<result name="success">/succ.jsp</result>	
+			<result name="input">/WEB-INF/content/error.jsp</result>
+		</action>
+		<action name="sellerGetHouse" class="com.qiushan.action.seller.GetHouseAction">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<!-- 跳到主页 -->
+			<result name="success">/WEB-INF/content/house.jsp</result>
+		</action>
+		
+		
+		
+		<!-- 支付宝接口调用 -->
+		
+		
+		<action name="payRequest" class="com.qiushan.zhifu.PayRequest">
+			<interceptor-ref name="params"/>
+			<interceptor-ref name="loginInterctpor"/>
+			<result name="error">/WEB-INF/content/error.jsp</result>
+		</action>
+	</package>
+	
+	<include file="struts_*.xml"></include>	
+</struts>

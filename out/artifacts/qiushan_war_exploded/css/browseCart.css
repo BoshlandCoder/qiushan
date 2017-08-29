@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+.bc_core{
+	width: 80%;
+	margin-left: 10%;
+}
+.bc_core li{
+	height:50px;
+	list-style: none;
+	margin-left: 10%;
+	margin-top:5%;
+	background: #cee3ec;
+	line-height: 50px;
+}
+.bc_core li span{
+	float: right;
+}

@@ -1,0 +1,259 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #ebebeb;
+  font: normal 12px/1.5 "Helvetica Neue", "Microsoft Yahei", Tahoma, Arial;
+  color: #fff;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.page-cont {
+  width: 680px;
+  margin: 30px auto 0;
+  padding: 30px 40px;
+
+  overflow: hidden;
+  color: #b4b4b4;
+}
+
+.m-from{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.m-from input[type="text"],
+.m-from input[type="password"] {
+  line-height: 18px;
+  width: 300px;
+  height: 18px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.m-from input[type="text"]:focus,
+ .m-from input[type="password"]:focus {
+   border: 1px solid #ffcd5d;
+ }
+
+.m-from .form-group {
+
+  overflow: hidden;
+}
+.m-from .control-group {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.m-from .control-group .controls-label {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.m-from .control-group .controls {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.m-from .control-group .controls label {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.m-from .control-group .controls .mask-text {
+  width: 300px;
+  height: 18px;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  cursor: default;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.m-from .control-group .controls .icon-eye {
+  background-position: 0 0;
+  height: 11px;
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+}
+.m-from .control-group .controls .icon-eye:hover, .m-from .control-group .controls .icon-eye.eye-hover {
+  background-position: 0 -11px;
+}
+.m-from .verify-group {
+  overflow: hidden;
+}
+.m-from .verify-group .controls label {
+  display: block;
+  float: left;
+  width: 176px;
+}
+.m-from .verify-group .controls label input[type="text"],
+.m-from .verify-group .controls label input[type="password"] {
+  width: 156px;
+}
+.m-from .verify-group .controls .verify-image,
+.m-from .verify-group .controls .btn-verifyCode {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.m-from .verify-group .controls .verify-image {
+  width: 130px;
+  height: 40px;
+  vertical-align: -16px;
+}
+.m-from .verify-group .controls .btn-verifyCode {
+  width: 128px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #d9ecff;
+  border: 1px solid #3b83cb;
+  text-align: center;
+  vertical-align: 0;
+  color: #3b83cb;
+  cursor: pointer;
+}
+.m-from .verify-group .controls .btn-verifyCode:hover {
+  background-color: #3b83cb;
+  color: #fff;
+}
+.m-from .verify-group .controls .btn-verifyCode.btn-verifyCode-dis {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #666;
+  text-decoration: none;
+  cursor: default;
+}
+.m-from .verify-group .controls .mask-text {
+  width: 156px;
+}
+.m-from .text-group {
+  text-align: right;
+  overflow: hidden;
+}
+.m-from .text-group label {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.m-from .text-group label input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.m-from .text-group a {
+  margin: 0;
+  padding: 0;
+  color: #3b83cb;
+}
+.m-from .button-group input[type="button"],
+.m-from .button-group input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal 18px/36px "Microsoft Yahei";
+  background-color: #f60;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.m-from .button-group input[type="button"]:hover,
+.m-from .button-group input[type="submit"]:hover {
+  background-color: #f90;
+}
+.m-from .button-group input[type="button"]:focus,
+.m-from .button-group input[type="submit"]:focus {
+  outline: none;
+}
+
+.verify-info {
+  height: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  padding-left: 30px;
+  color: #ff5756;
+  position: relative;
+  z-index: 99;
+  float: left;
+  font-size: 10px;
+}
+
+
+/* page style ================================================================================*/
+.main-box {
+  position: relative;
+}
+.login-btn-tabs {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.login-btn-tabs a {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0;
+  color: #b4b4b4;
+}
+.login-btn-tabs .active {
+  font-weight: 400;
+  color: #fff;
+  cursor: default;
+  text-decoration: none;
+}
+.login-btn-tabs p {
+  display: inline-block;
+  margin: 0 0 0 30px;
+  padding: 0;
+  font-size: 14px;
+}
+.login-btn-tabs .highlight-box {
+  margin: 0;
+  padding: 0;
+  color: #f60;
+}
+
+.t-from {
+  margin-top: 26px;
+}
+.t-from .form-group {
+  display: block;
+  overflow: hidden;
+}
+.t-from .control-group {
+  overflow: hidden;
+}
+.t-from .control-group .controls {
+  float: left;
+  width: 320px;
+  overflow: hidden;
+}
+
+.t-from .phone-group .controls label {
+  margin: 0 0 0 142px;
+  padding: 0;
+}
+.t-from .phone-group .controls label input[type="text"],
+.t-from .phone-group .controls label input[type="password"],
+.t-from .phone-group .controls label .mask-text {
+  width: 156px;
+}
+.t-from .button-group {
+  width: 320px;
+}

@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+.bottom .bottom_img  ul{
+	list-style: none;
+	text-align: center;
+}
+.bottom .bottom_img  ul li{
+	float: left;
+	height: 250px;
+	width: 350px;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.index_bottom{
+	clear:left;
+	clear: both;
+	width: 100%;
+	height: 85px;
+	background-color: #ECEDF1;
+	padding-bottom: 32px;
+}
+.center{
+	text-align: center;
+	margin: 40px;
+}
+
+.blick-style {
+	margin: 20px;
+	background-color: #f8f8f8;
+}
+
+.search-div {
+	margin-top: 15px;
+	margin-left: 20px;
+	display: inline-block
+}
+
+.button-btn {
+	background-color: #f4bd22;
+	height: 36px;
+	width: 86px;
+	color: white;
+	letter-spacing: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 10px;
+	margin-left: 0px;
+}
+
+.button-btn :hover {
+	background-color: #deb43c;
+}
+
+.button-btn :focus {
+	background-color: #deb43c;
+}
+
+.has-sub {
+	float: left;
+	list-style: none;
+	height: 55px;
+	min-width: 80px;
+	width: auto;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.has-sub:hover {
+	border-bottom: 5px solid #2f7ee3;
+	background-color: #eaf2fc;
+	color: #2f7ee3;
+}
+
+.has-sub a{
+	display: block;
+	text-decoration: none;
+	padding-top: 20px;
+	color: #000000;
+	padding-bottom: 20px;
+}
+
+.has-sub a:hover {
+	color: #2f7ee3;
+}
